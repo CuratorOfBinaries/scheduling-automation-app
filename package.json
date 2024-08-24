@@ -1,0 +1,36 @@
+{
+  "name": "scheduling-automation-app",
+  "version": "0.0.1",
+  "description": "These scheduling tools are great for scheduling interviews or meetings with other people outside your organisation, without the tiresome back and forth via email trying to find a slot that works. Think Calendly or Cal.com",
+  "type": "module",
+  "bin": {
+    "dan-saa": "./dist/bin/saa.js"
+  },
+  "main": "./dist/bin/saa.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "start": "node ./dist/bin/saa.js"
+  },
+  "author": "DanStockham",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/local-auth": "^2.1.0",
+    "dotenv": "^16.4.5",
+    "googleapis": "^105.0.0",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/plugin-transform-runtime": "^7.24.7",
+    "@babel/preset-env": "^7.25.3",
+    "@babel/preset-typescript": "^7.24.7",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.23",
+    "@types/yargs": "^17.0.32",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.4",
+    "ts-jest-mock-import-meta": "^1.2.0"
+  }
+}
